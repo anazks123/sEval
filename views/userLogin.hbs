@@ -1,0 +1,79 @@
+{{!-- 
+<style>
+    .box{
+       
+        height: 500px;
+        border: 1px solid black;
+        width: auto;
+        box-shadow: 60px -16px teal;
+    }
+    .box2{
+        
+        height: 300px;
+        border: 1px solid black;
+        width: auto;
+        width: 400px;
+        box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    }
+   
+
+div.well{
+  height: 250px;
+} 
+
+.Absolute-Center {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.Absolute-Center.is-Responsive {
+  width: 50%; 
+  height: 50%;
+  min-width: 200px;
+  max-width: 400px;
+  padding: 40px;
+}
+
+#logo-container{
+  margin: auto;
+  margin-bottom: 10px;
+  width:200px;
+  height:30px;
+  background-image:url('http://placehold.it/200x30/000000/ffffff/&text=BRAND+LOGO');
+}
+</style> --}}
+
+<div class="container p-5">
+    <div class="box">
+        <div class="container">
+  <div class="row">
+    <div class="Absolute-Center is-Responsive">
+      <div id="logo-container"></div>
+      <div class="col-sm-12 col-md-10 col-md-offset-1 box2">
+          <div>
+              <h3 style="margin-left: 50px;"> <b>LOGIN</b> </h3>
+          </div>
+
+
+
+{{#if alert}}
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+  {{alert}}
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{{/if}}
+
+<form class="row g-3 needs-validation" method="POST" action="/userLogin" novalidate>
+  {{> logU}}
+</form>
+
+
+
+
+           </div>  
+    </div>    
+  </div>
+</div>
+    </div>
+</div>

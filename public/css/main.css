@@ -1,0 +1,160 @@
+/* No CSS *//*# sourceMappingURL=main.css.map */
+@import url('https://fonts.googleapis.com/css?family=PT+serif');
+body{
+    background-image: linear-gradient(to right, #8490ff 0%, #62bdfc 48%, #8490ff 100%);
+  
+}
+i{
+    color:#0f97f9;
+}
+h2{
+    color:#4a90e2;
+     line-height:5px;
+      font-family: 'PT Mono', monospace;
+}
+h5{
+    color:#aaa;
+     font-family: 'PT Mono', monospace;
+}
+#lastName{
+    color:orange;
+}
+#title{
+    line-height:5px;
+}
+li{
+    display:inline-block  ;
+    margin:6px;
+}
+.cardContainer{ 
+  padding-top:30px;    
+}
+.profileImg{
+ z-index:3;
+  position:relative;
+   border-radius:100%;
+    width:120px;
+     height:120px;
+      border:4px solid #0f9ff9;
+       overflow:hidden ;
+        position:;
+        /*transform:translateY(20%);*/
+         margin:0 auto;
+          text-align:center;     
+           box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);      
+              -webkit-transform: translatey(0px);
+    -webkit-animation: float 6s ease-in-out infinite; 
+}
+
+
+
+.profileCard{
+    width:90%;
+     height:400px;
+      background:#f2f2f2;
+       margin:0 auto ;
+        border-radius:10px;
+         position:;
+          transform:translateY(-60px);
+           z-index:;
+            box-shadow: 0 15px 20px rgba(0, 0, 0, 0.4); 
+            
+       
+}
+
+.profileHead{
+    padding-top:90px;
+     margin:0 auto ;
+      text-align:center;
+}
+
+hr{
+    width:50%;
+}
+
+.profileBody{
+  text-align:center;
+   padding-top:20px;
+}
+
+#readM{
+    color:#aaa;
+}
+.profileBody p{
+    color:#aaa;
+    line-height:5px;
+}
+
+.Txt{
+    width:100%;
+     overflow:hidden ;
+      margin:20px;
+}
+.contains-Txt{
+    width:33.3%;
+     float:left;
+      text-align:center;
+      
+}
+
+button{
+  padding: 0px 42px;
+   width:50%;
+   line-height: 40px;
+    background-image: linear-gradient(to right, #8490ff 0%, #62bdfc 48%, #8490ff 100%);
+    border:0px;
+     background-size: 200% auto;
+      color: #fff;
+       border-radius: 5px;
+        font-size: 13px;
+         font-weight: 500;
+          transition: all 300ms linear 0s; 
+           -webkit-transform:rotateX(0deg);
+            outline:none;
+}
+button:hover {
+    background-position: right center;
+     color: #fff;
+      }
+.profileFooter{
+    padding-top:20px;
+}
+.fab{
+    font-size:25px;
+     padding:10px;
+}
+.fab:hover{
+    background:#0f97f9;
+     color:#202020;
+      width:20px;
+       height:20px;
+        padding:10px;
+         border-radius:100%;
+          transition:0.4s;
+}
+@-webkit-keyframes rotate{
+  from{-webkit-transform:rotateX(0deg);}
+  to{-webkit-transform:rotateX(360deg);}
+}
+@-webkit-keyframes rotateD{
+ from{-webkit-transform:rotateX(360deg);}
+  to{-webkit-transform:rotateX(0deg);}
+}
+@keyframes rotatex{
+    from{-webkit-transform:rotateY(0deg);}
+  to{-webkit-transform:rotateY(180deg);}
+}
+@keyframes float {
+    0% {
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+        transform: translatey(0px);
+    }
+    50% {
+        box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+        transform: translatey(-15px);
+    }
+    100% {
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+        transform: translatey(0px);
+    }
+}

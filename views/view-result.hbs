@@ -1,0 +1,49 @@
+<style>
+    th{
+        color: white;
+    }
+    td{
+        color: white;
+    }
+</style>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/view" class="btn btn-outline-light">Home</a></li>
+        
+    </ol>
+</nav>
+
+<div class="view-user p-5">
+    {{!-- {{#each rows}} --}}
+    <div class="row mb-5">
+        <div class="col text-center">
+            <h3>{{this.id}} {{this.name}}</h3>
+        </div>
+    </div>
+https://resstat.netlify.app/
+
+    <div class="row">
+        <div class="col">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Semester</th>
+                        <th scope="col">CGPA</th>
+                    </tr>
+                </thead>
+
+                {{#each rows}}
+                <tbody>
+                    <tr>
+                        <td>{{this.semester}}</td>
+                        <td>{{this.cgpa}}</td>
+                    </tr>
+                </tbody>
+                {{/each}}
+            </table>
+        </div>
+    </div>
+
+    {{!-- {{/each}} --}}
+
+</div>
